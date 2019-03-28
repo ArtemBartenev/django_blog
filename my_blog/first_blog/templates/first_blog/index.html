@@ -1,0 +1,15 @@
+{% extends 'first_blog/base_blog.html' %}
+
+{% block title %}
+{% endblock title %}
+
+{% block content %}
+<h1 class="mb-5">Posts:</h1>
+<ul>
+    {% for item in list  %}
+    <li>
+        {{ item }}
+    </li>
+    {% endfor %}
+</ul>
+{% endblock content %}
